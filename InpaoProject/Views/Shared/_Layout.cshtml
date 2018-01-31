@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link rel="stylesheet" href="~/Content/font-awesome-4.7.0/css/font-awesome.min.css">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body style="background-color:#e9e7e7">
+    <div class="navbar navbar-inverse navbar-fixed-top" style="height:80px; width:100%; background-color:#363636;">
+        <div id="applicationName" style="width:45%; float:left;">
+            <div style="margin-left:10%; width:80%">
+                <i class="fa fa-tint fa-3x" aria-hidden="true" style="color:#ffffff; margin-right:30px; float:left"></i><h2 style="color:#fff"> APPLICATION TEST</h2>
+            </div>
+        </div>
+        <div id="applicationSearch" style="width:45%;float:right; height:100%; background-color:#4F4F4F">
+            <div style="width:80%; margin-left:15%; margin-top:3%"><input type="text" placeholder="BUSCA de Elementos" style="color:#ffffff;font-size:18px; background-color:transparent; border:none; width:100%;" /></div>
+        </div>
+    </div>
+    <div style="margin-left: 4%; margin-right:4%">
+        @RenderBody()
+        @*<hr>
+        <footer>
+            <p>&copy; @DateTime.Now.Year - MY TESTING</p>
+        </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

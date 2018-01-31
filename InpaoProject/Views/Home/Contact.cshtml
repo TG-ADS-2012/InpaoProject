@@ -1,0 +1,338 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+
+
+<div id="content" class="row" style="margin-top:5%;">
+    <div id="divVeiculo">
+        <h2 style="float:left">TESTE TESTE</h2>
+        <i class="fa fa-plus-circle fa-3x" aria-hidden="true" style="float:right; margin-right:10%; margin-top:6px; cursor:pointer;" onclick="modal();"></i>
+    </div>
+    <hr>
+
+    <div id="divCar">
+        <label style="margin-left:10%; font-size:15px">Teste Carros</label>
+        <div class="car">
+            <div style="width:60%; float:left; margin-top:2%">
+                <ul class="">
+                    <li style="font-family:Arial; font-size:17px;">Testing</li>
+                    <li style="font-family:Arial; font-size:17px;color:#136340">Testing Description</li>
+                    <li style="font-family:Arial; font-size:17px; color:#3e3c3d">Testing Description</li>
+                </ul>
+            </div>
+            <div style="width:20%; float:right; margin-right:3%; margin-top:3%">
+                <i class="fa fa-tag fa-3x" aria-hidden="true" style="float:right; margin-right:10%; margin-top:6px;"></i>
+            </div>
+        </div>
+    </div>
+
+    <div id="divDescription">
+        <div style="width:100%">
+            <label style="font-size:15px">TESTING DESCRIPTION</label>
+        </div>
+        <div style="width:70%; background-color:#f2efdc; border-radius:3px; float:left">
+            <h3 style="margin-left:3%;">Testing Description Car</h3>
+            <div style="width:100%">
+                <div style="width:40%; margin-left:2%; float:left">
+                    <p><strong>Marca:</strong></p>
+                    <p style="color:#3e3c3d;">TESTING</p>
+                </div>
+                <div style="width:40%; margin-left:2%;float:right">
+                    <p><strong>Ano:</strong></p>
+                    <p style="color:#3e3c3d;">TESTING</p>
+                </div>
+            </div>
+            <div style="float: left;margin-top: 2%;padding: 15px;font-size: 16px;">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit, lectus non volutpat vestibulum, odio risus sodales massa, sit amet porta purus lectus eu sapien.
+                    Aliquam pellentesque nisl nec porttitor malesuada. Nullam ultrices velit a finibus tincidunt. Donec eleifend arcu tempor congue rutrum. Cras nec posuere metus.
+                    Sed id ultrices ipsum, in bibendum nulla. Sed tempor sodales scelerisque. Pellentesque nec sem quis sem sagittis volutpat sed quis augue.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut hendrerit, lectus non volutpat vestibulum, odio risus sodales massa, sit amet porta purus lectus eu sapien.
+                    Aliquam pellentesque nisl nec porttitor malesuada. Nullam ultrices velit a finibus tincidunt. Donec eleifend arcu tempor congue rutrum. Cras nec posuere metus.
+                    Sed id ultrices ipsum, in bibendum nulla. Sed tempor sodales scelerisque. Pellentesque nec sem quis sem sagittis volutpat sed quis augue.
+                </p>
+            </div>
+            <div style="width:100%; float:left; margin-bottom:2%; border-top:3px solid #e9e7e7">
+                <div style="width:40%; margin-left:2%; float:left; margin-top:2%">
+                    <button class="button"><i class="fa fa-pencil" aria-hidden="true"></i>      EDITAR </button>
+                </div>
+                <div style="width:40%; margin-left:2%;float:right;margin-top:2%">
+                    <i class="fa fa-tag fa-2x" aria-hidden="true" style="float:right; margin-right:10%; margin-top:20px;"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="testeee">
+
+    </div>
+</div>
+
+
+@*<div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <p>This is a small modal.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>*@
+
+<style>
+    #divVeiculo {
+        width: 100%;
+    }
+
+    #divDescription {
+        width: 50%;
+        float: right;
+    }
+
+    #divCar {
+        width: 50%;
+        float: left;
+    }
+
+    hr {
+        margin-top: 4%;
+    }
+
+    .car {
+        width: 70%;
+        height: 100px;
+        background-color: #ffffff;
+        border-radius: 5px;
+        margin-left: 11%;
+        margin-top: 2%;
+    }
+
+    ul {
+        list-style-type: none;
+    }
+
+    .button {
+        background-color: #555555;
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 3px;
+    }
+
+
+
+    #divYear, #divDescriptionCar {
+        margin-left: 13px;
+        margin-top: 21px;
+    }
+
+    .modal-content {
+        background-color: #c6c6ca;
+    }
+
+    .modal-header {
+        border-bottom: none !important;
+    }
+
+    .modal-footer {
+        width: 95%;
+        margin-left: 2%;
+    }
+
+    .label-title {
+        color: #4e94a5;
+        margin-left: 12px;
+    }
+
+    .no-border {
+        border: 0;
+        box-shadow: none;
+    }
+
+    .input-form {
+        background-color: transparent;
+        border-bottom: 1px solid;
+        border-radius: 0px;
+    }
+</style>
+
+<script type="text/javascript">
+
+
+
+    function modal() {
+        createModal();
+        $('#myModal').modal();
+
+        $('#closeModal').attr("data-dismiss", "modal");
+        $('#divContent').css({ "width": "40%" });
+        $('#divContent').css({ "margin-top": "4%" });
+        //$('#inputVendido').attr("data-toggle", "toggle");
+    }
+
+    function createModal() {
+        var content = document.getElementById('content');
+
+        var divPrincipalModal = document.createElement("div");
+        divPrincipalModal.id = 'myModal';
+        divPrincipalModal.className = 'modal fade';
+        divPrincipalModal.attributes = 'dialog';
+
+        var divSecund = document.createElement("div");
+        divSecund.className = 'modal-dialog modal-sm';
+        divSecund.id = 'divContent';
+
+        divPrincipalModal.appendChild(divSecund);
+
+        var divThird = document.createElement("div");
+        divThird.className = 'modal-content';
+        divSecund.appendChild(divThird);
+
+        var divFourth = document.createElement("div");
+        divFourth.className = 'modal-header';
+        divThird.appendChild(divFourth);
+
+        var headerModal = document.createElement("h3");
+        headerModal.className = 'modal-title';
+        headerModal.innerText = 'Teste';
+        divFourth.appendChild(headerModal);
+
+        var divModalBody = document.createElement("div");
+        divModalBody.className = 'modal-body';
+
+        var form = document.createElement("form");
+        var divForm = document.createElement("div");
+        divForm.className = 'form-row';
+        var divInputFirst = document.createElement("div");
+        divInputFirst.className = 'col-md-4 mb-3';
+        var labeForVeiculo = document.createElement("label");
+        labeForVeiculo.className = 'label-title';
+        labeForVeiculo.innerText = 'Veiculo';
+        var inputVeiculo = document.createElement("input");
+        inputVeiculo.type = 'text';
+        inputVeiculo.className = 'form-control input-form no-border';
+        inputVeiculo.placeholder = 'Veiculo';
+        inputVeiculo.id = 'inputVeiculo';
+        divInputFirst.appendChild(labeForVeiculo);
+        divInputFirst.appendChild(inputVeiculo);
+
+        var divInputSecond = document.createElement("div");
+        divInputFirst.className = 'col-md-4 mb-3';
+        var labeForMarca = document.createElement("label");
+        labeForMarca.className = 'label-title';
+        labeForMarca.innerText = 'Marca';
+        var inputMarca = document.createElement("input");
+        inputMarca.type = 'text';
+        inputMarca.className = 'form-control input-form no-border';
+        inputMarca.placeholder = 'Marca';
+        inputMarca.id = 'inputMarca';
+        divInputSecond.appendChild(labeForMarca);
+        divInputSecond.appendChild(inputMarca);
+
+        divForm.appendChild(divInputFirst);
+        divForm.appendChild(divInputSecond);
+
+        var divFormSecond = document.createElement("div");
+        divFormSecond.className = 'form-row';
+
+        var divInputThird = document.createElement("div");
+        divInputFirst.className = 'col-md-6 mb-3';
+        divInputThird.id = 'divYear';
+        var labeForAno = document.createElement("label");
+        labeForAno.className = 'label-title';
+        labeForAno.innerText = 'Ano';
+        var inputAno = document.createElement("input");
+        inputAno.type = 'text';
+        inputAno.className = 'form-control input-form no-border';
+        inputAno.placeholder = 'Ano';
+        inputAno.id = 'inputMarca';
+        divInputThird.appendChild(labeForAno);
+        divInputThird.appendChild(inputAno);
+        divFormSecond.appendChild(divInputThird);
+
+        var divInputForth = document.createElement("div");
+        divInputFirst.className = 'col-md-6 mb-3';
+        divInputThird.id = 'divVend';
+        var labeForVendido = document.createElement("label");
+        labeForVendido.className = 'label-title';
+        labeForVendido.innerText = 'Vendido';
+        var inputVendido = document.createElement("input");
+        inputVendido.type = 'checkbox';
+        inputVendido.className = 'form-control input-form no-border';        
+        inputVendido.id = 'inputVendido';
+        divInputForth.appendChild(labeForVendido);
+        divInputForth.appendChild(inputVendido);
+        divFormSecond.appendChild(divInputForth);
+
+
+        var divFormThird = document.createElement("div");
+        divFormThird.className = 'form-row';
+        var divInputThird = document.createElement("div");
+        divInputFirst.className = 'col-md-8 mb-3';
+        divInputThird.id = 'divDescriptionCar';
+        //var labeForDescription = document.createElement("label");
+        //labeForDescription.className = 'label-title';
+        //labeForDescription.innerText = 'Descrição';
+        var inputDescription = document.createElement("textarea");
+        //inputDescription.type = 'text-area';
+        inputDescription.className = 'form-control input-form no-border';
+        inputDescription.rows = '5';
+        inputDescription.placeholder = 'Descrição';
+        inputDescription.id = 'inputDescricao';
+        //divInputThird.appendChild(labeForDescription);
+        divInputThird.appendChild(inputDescription);
+
+
+        form.appendChild(divForm);
+        form.appendChild(divFormSecond);
+        form.appendChild(divInputThird);
+
+
+
+        divModalBody.appendChild(form);
+        divThird.appendChild(divModalBody);
+
+        var divFooter = document.createElement("div");
+        divFooter.className = 'modal-footer';
+
+        var butoonAdd = document.createElement("button");
+        butoonAdd.className = 'button';
+        butoonAdd.innerText = 'ADD';
+        divFooter.appendChild(butoonAdd);
+
+        var butoonFechar = document.createElement("button");
+        butoonFechar.className = 'button';
+        butoonFechar.innerText = 'FECHAR';
+        butoonFechar.id = 'closeModal';
+        divFooter.appendChild(butoonFechar);
+
+        divThird.appendChild(divFooter);
+        content.appendChild(divPrincipalModal);
+
+    }
+
+    //var testeee = document.getElementById('inputVeiculo');
+    //testeee.onfocus(function () {
+    //    alert('teste');
+    //});
+
+    function acessapi() {
+        alert('passou');
+    }
+
+</script>
